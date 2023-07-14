@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <title>Chat Ritual</title>
+  <link rel="stylesheet" href="{% static 'css/chatStyle.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'img/logoIco.ico' %}">
+
+</head>
+<body>
+
+ <!-- Header----------------------------------------------------------------------------------------------------------------->
+<div class="top-headbar">
+      <a href="/perfil/" class="profile-button" style="margin-left: 340px;">
+        <img src="" alt="Foto de perfil">
+        Perfil del Usuario
+      </a>
+      <input type="text" class="search-input" placeholder="Buscar palabras clave">
+</div>
+
+  <!-- Barra lateral------------------------------------------------------------------------------------------------------ -->
+<div class="sidebar">
+  <a href="/inicio/" class="profile-button"><b>Inicio</b></a>
+  <a href="/perfil/" class="profile-button"><b>Mi perfil</b></a>
+  <h2 style="color: #9CA2A2; font-weight: bold;">Chats</h2>
+  <input type="text" class="search-input" style="margin-left: 10px;" placeholder="Buscar contactos">
+  <svg width="16" height="16" fill="#535A5A" class="bi bi-search bi-search-rotate" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg>
+
+  <div class="conversation" style="color: #9CA2A2; font-weight: bold; margin-left: 10px;">
+    <img src="ruta/a/la/imagen-usuario1.png" alt="Img User 1" style="vertical-align: middle; width: 24px; height: 24px; border-radius: 50%; margin-right: 10px;">
+    Conversación 1
+  </div>
+  <div class="conversation" style="color: #9CA2A2; font-weight: bold; margin-left: 10px;">
+    <img src="ruta/a/la/imagen-usuario2.png" alt="Img User 2" style="vertical-align: middle; width: 24px; height: 24px; border-radius: 50%; margin-right: 10px;">
+    Conversación 2
+  </div>
+</div>
+
+
+
+  <!-- Contenido principal -------------------------------------------------------------------------------------------------------------------------------------------------->
+     {% block visualizacionMensajes %}
+      {% for conversacion in conversaciones %}
+        <div class="conversation">
+          {% for mensaje in conversacion.mensaje_set.all %}
+            <div>{{ mensaje.emisor }}: {{ mensaje.contenido }}</div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endblock %}
+
+
+  <!-- Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="footer">
+  <div class="emoticon-button">
+    <svg width="16" height="16" fill="#535A5A" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+    </svg>
+  </div>
+  <div class="attachments-button">
+    <svg width="16" height="16" fill="#535A5A" class="bi bi-paperclip" viewBox="0 0 16 16">
+      <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+    </svg>
+    <div class="attachments-dropdown">
+      <button class="attachment-option">Enviar imágenes</button>
+      <button class="attachment-option">Enviar videos</button>
+      <button class="attachment-option">Enviar archivos PDF</button>
+    </div>
+  </div>
+   <div class="message-input">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit" class="send-button">
+      <svg width="16" height="16" fill="#535A5A" class="bi bi-send" viewBox="0 0 16 16">
+        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+      </svg>
+    </button>
+
+   </div>
+
+</body>
+</html>
