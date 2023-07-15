@@ -5,76 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7fe4aa2-dc96-40b8-b7d7-2a5985e58e86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AppRitual/templates/blog/editarBlogExitoso.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/templates/acercaRitual.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/acercaRitual.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/templates/blog/detalleBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/blog/detalleBlog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/templates/blog/editarBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/blog/editarBlog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/templates/chat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppRitual/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/templates/chat/templatePadreChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/templates/chat/templatePadreChat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppRitual/templates/bodasEventos.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/bodasEventos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppRitual/templates/reservaciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/reservaciones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppRitual/templates/trabajadores.html" beforeDir="false" afterPath="$PROJECT_DIR$/AppRitual/templates/trabajadores.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Aeromexico_HNPXZQ_2022_12_21_EZE-MEX_I_GONZALEZ_1392134463027_1_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Aeromexico_HNPXZQ_2022_12_21_EZE-MEX_I_GONZALEZ_1392134463027_1_1_ARGSkJs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Aeromexico_HNPXZQ_2022_12_21_EZE-MEX_I_GONZALEZ_1392134463027_1_1_VH0jQKs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Aeromexico_HNPXZQ_2022_12_21_EZE-MEX_I_GONZALEZ_1392134463027_1_1_nUkfRfv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Bitcoin_Dominance_Cicle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Bitcoin_Dominance_Cicle_UJD5DPe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Bitcoin_Dominance_Cicle_ZcZFxNS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Bitcoin_Dominance_Cicle_t9JOrBo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Forrest_HYuqkkR.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Forrest_Yhlu4BM.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Forrest_i7NgztS.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/Forrest_nBhQYDY.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_2FlinTY.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_2sRcImH.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_GMenmlz.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_NghNZ4n.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_W4JQhY2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_aOilxnr.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_b6hoCcP.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_hfz9SE3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_t09fm1D.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_tadc2e6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/FrlRDvYWwAAGAJJ_tkpCNh0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/IMG-20230420-WA0016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-football.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/noche-brillan-las-estrellas-de-fondo-papel-pintado-5120x2160_16_akWhJFB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/avatares/pIP_oSrqafa.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/blog_images/Chalten_9zAl5j8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/blog_images/ComprobanteTelcel-739515.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/blog_images/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-football.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/blog_videos/videoPrueba.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/blog_videos/videoPrueba_ZEzrT2A.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/IMG-20230420-WA0007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/WhatsApp_Image_2023-07-03_at_13.11.48.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/WhatsApp_Image_2023-07-03_at_13.11.48_dGBsFDK.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_5Bt1GLt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_9z5eOnU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_BOoG6XN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_IhsAjHi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_Q82BtiA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_d34oTSn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_pDnfnAC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_sMmp7eA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_t5i2Ncc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_u7tPIbN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/aldosivi-fc-golden-logo-argentine-primera-division-green-metal-background-footb_vFSZY1X.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/edd_8YmRKpc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/edd_lJ0a1ek.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/login_TZT8u0v.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/pexels-life-of-pix-7862_41I4Zgp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/pexels-life-of-pix-7862_EOvZRFC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/pexels-life-of-pix-7862_IvJuUNd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fotos_id/pexels-life-of-pix-7862_mXViHs7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restauranteRitualAdmin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/restauranteRitualAdmin/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
