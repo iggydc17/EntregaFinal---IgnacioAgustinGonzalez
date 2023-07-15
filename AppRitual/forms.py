@@ -104,3 +104,5 @@ class BlogForm(forms.ModelForm):
         widgets = {
             'cuerpo': forms.Textarea(attrs={'style': 'height: 274px; width: 1200px;'})
         }
+
+

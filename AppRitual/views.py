@@ -7,6 +7,7 @@ from .forms import reservacionFormularios, eventoFormularios, trabajadorFormular
 from .models import Trabajadore, Evento, ReservasMesa, Avatar, Blog, EditPerfil
 from django.contrib.auth.models import User
 from django.db.models import Q
+from django.urls import reverse
 
 
 
@@ -421,7 +422,7 @@ def listaBlog(request):
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
-            #evitamos el envio del form, y restructuramos el id del autor
+            # Evitamos el envio del form, y reestructuramos el ID del autor.
             form2 = form.save(commit=False)
             form2.autor_id = request.user.id
             form2.save()
@@ -448,15 +449,21 @@ def crearBlog(request):
 @login_required
 def editarBlog(request, blog_id):
     blog = get_object_or_404(Blog, id=blog_id)
+
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
         if form.is_valid():
             form.save()
-            return redirect('listaBlog')
+            return redirect('blog/detalle')
     else:
         form = BlogForm(instance=blog)
 
-    return render(request, 'blog/detalleBlog.html', {'form': form})
+    return render(request, 'blog/editarBlog.html', {'form': form})
+
+
+@login_required()
+def editarBlogExitoso(requests, blog_id):
+    return render(requests, "blog/editarBlogExitoso.html", {'blog_id': blog_id})
 
 
 @login_required
@@ -464,7 +471,7 @@ def eliminarBlog(request, blog_id):
     blog = get_object_or_404(Blog, id=blog_id)
     if request.method == 'POST':
         blog.delete()
-        return redirect('listaBlog')
+        return redirect('detalleBlog')
 
     return render(request, 'blog/eliminarBlog.html', {'blog': blog})
 
@@ -499,5 +506,5 @@ def buscarBlogs(request):
         return render(request, 'blog/buscarBlog.html', {'blogs': blogs})
 
 
-# Chat en otra App -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Chat en App Chat -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

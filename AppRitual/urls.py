@@ -42,10 +42,11 @@ urlpatterns = [
     path('blog/', listaBlog, name="listaBlog"),
     path('blog/crear/', crearBlog, name="crearBlog"),
     path('blog/editar/<int:blog_id>/', editarBlog, name="editarBlog"),
+    path('blog/editar/<int:blog_id>/blog/detalle/', editarBlogExitoso, name="editarBlogExitoso"),
     path('blog/eliminar/<int:blog_id>/', eliminarBlog, name="eliminarBlog"),
     path('blog/buscar/', buscarBlogs, name="buscarBlogs"),
     path('blog/buscar/<str:keyword>/<str:date>/', buscarBlogs, name="buscarBlogs"),
     path('blog/detalle/<int:blog_id>/', detalleBlog, name="detalleBlog"),
-    path('chat/', chatView, name="chat"),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

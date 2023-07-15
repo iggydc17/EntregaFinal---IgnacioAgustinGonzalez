@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .forms import MensajeForm
+from .forms import MensajeForm, ConversacionForm
 from .models import Mensaje, Conversacion
 from django.contrib.auth.models import User
 
@@ -8,15 +8,33 @@ from django.contrib.auth.models import User
 @login_required()
 def chatView(request):
     form = MensajeForm()
-    return render(request, "chat/templatePadreChat.html", {'form': form})
+    users = User.objects.all()
+    conversaciones = Conversacion.objects.all()
+    ctx = {'form': form, 'chat_users': users, 'conversaciones': conversaciones}
+    if request.method == 'POST':
+        receptor = User.objects.get(id=request.POST['receptor'])
+        emisor = request.user
+        form_conv = Conversacion(receptor=receptor, emisor=emisor)
+        try:
+            id_conv = form_conv.save()
+        except:
+            print(form_conv)
+        conversacion_id = id_conv  # guarde el nro de conversacion
+        form_msj = MensajeForm(request.POST)
+        form_msj_2 = form_msj.save(commit=False)
+        form_msj_2.conversacion = Conversacion.objects.get(id=1)  # cual es la conversacion que corresponde
+        form_msj_2.save()
+        return redirect('chat')
+    return render(request, "chat/templatePadreChat.html", ctx)
 
 
 # Mensajes ------------------------------------------------------------------------------------------------------------------
 
 
 @login_required()
-def listaMensajes(request):
-    pass
+def listaMensajes(request, id):
+    mensajes = Mensaje.objects.all()
+    return render(request, 'chat/verMensajes.html', {'mensajes': mensajes})
 
 
 @login_required()
@@ -49,14 +67,12 @@ def eliminarMensajes(request):
     pass
 
 
-
-
-
 # Conversaciones ------------------------------------------------------------------------------------------------------------------
 
 
 def listaConversaciones(request):
     pass
+
 
 @login_required()
 def buscarConversaciones(request):

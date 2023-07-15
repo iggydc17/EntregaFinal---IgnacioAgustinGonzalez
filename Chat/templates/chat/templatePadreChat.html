@@ -42,14 +42,14 @@
 
   <!-- Contenido principal -------------------------------------------------------------------------------------------------------------------------------------------------->
      {% block visualizacionMensajes %}
-      {% for conversacion in conversaciones %}
-        <div class="conversation">
-          {% for mensaje in conversacion.mensaje_set.all %}
-            <div>{{ mensaje.emisor }}: {{ mensaje.contenido }}</div>
+          {% for conversacion in conversaciones %}
+            <a href="{% url 'chat:listaMensajes' conversacion_id=conversacion.id %}" class="conversation">
+              {% for mensaje in conversacion.mensaje_set.all %}
+                <div>{{ mensaje.emisor }}: {{ mensaje.contenido }}</div>
+              {% endfor %}
+            </a>
           {% endfor %}
-        </div>
-      {% endfor %}
-    {% endblock %}
+     {% endblock %}
 
 
   <!-- Footer -------------------------------------------------------------------------------------------------------------------------------------------------->

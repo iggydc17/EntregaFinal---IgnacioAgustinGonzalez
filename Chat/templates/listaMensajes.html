@@ -1,0 +1,16 @@
+{% extends "chat/templatePadreChat.html" %}
+{% load static %}
+
+{% block title %}Chat Ritual{% endblock %}
+
+{% block visualizacionMensajes %}
+
+% block visualizacionMensajes %}
+  {% for conversacion in conversaciones %}
+    <a href="{% url 'chat:listaMensajes' conversacion_id=conversacion.id %}" class="conversation">
+      {% for mensaje in conversacion.mensaje_set.all %}
+        <div>{{ mensaje.emisor }}: {{ mensaje.contenido }}</div>
+      {% endfor %}
+    </a>
+  {% endfor %}
+{% endblock %}
